@@ -111,8 +111,30 @@ int main() {
     a.push(4);
     a.push(2);
 
-    cout << a << endl;
-   
+    cout << a << endl << '\v' << '\v' << '\v';
+
+    MyBinaryTree<double> b;
+    b.push(5.349);
+    b.push(2.42);
+    b.push(23.3);
+    b.push(5);
+    b.push(11.11);
+    b.push(4);
+    b.push(88.2);
+
+    cout << b << endl << '\v' << '\v' << '\v';
+
+    MyBinaryTree<string> c;//строки сравниваются посимвольно и 99 > 123, так как 9 > 1
+    c.push("478");
+    c.push("345");
+    c.push("23");
+    c.push("73");
+    c.push("981");
+    c.push("1123");
+    c.push("335");
+
+    cout << c << endl << '\v' << '\v' << '\v';
+
     return 0;
 }
 /*
